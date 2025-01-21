@@ -1,6 +1,6 @@
 <?php
 
-namespace julio101290\boilerplateCFDIElectronicSeries\Database\Seeds;
+namespace julio101290\boilerplatecfdielectronicseries\Database\Seeds;
 
 use CodeIgniter\Config\Services;
 use CodeIgniter\Database\Seeder;

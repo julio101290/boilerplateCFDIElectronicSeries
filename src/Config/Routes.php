@@ -4,7 +4,7 @@ $routes->group('admin', function ($routes) {
 
 
 
-    routes->resource('seriesfacturaelectronica', [
+    $routes->resource('seriesfacturaelectronica', [
         'filter' => 'permission:seriesfacturaelectronica-permission',
         'controller' => 'seriesfacturaelectronicaController',
         'except' => 'show',
@@ -12,14 +12,11 @@ $routes->group('admin', function ($routes) {
     ]);
 
     $routes->post('seriesfacturaelectronica/save'
-    , 'SeriesfacturaelectronicaController::save'
-    , ['namespace' => 'julio101290\boilerplateCFDIElectronicSeries\Controllers']
+            , 'SeriesfacturaelectronicaController::save'
+            , ['namespace' => 'julio101290\boilerplateCFDIElectronicSeries\Controllers']
     );
     $routes->post('seriesfacturaelectronica/getSeriesfacturaelectronica'
-    , 'SeriesfacturaelectronicaController::getSeriesfacturaelectronica'
-    , ['namespace' => 'julio101290\boilerplateCFDIElectronicSeries\Controllers']
+            , 'SeriesfacturaelectronicaController::getSeriesfacturaelectronica'
+            , ['namespace' => 'julio101290\boilerplateCFDIElectronicSeries\Controllers']
     );
-
-
-
 });

@@ -1,10 +1,10 @@
  <?php
 $seriesfacturaelectronica["logDescription"] = "El registro en seriesfacturaelectronica fue guardado con los siguientes datos:";
 $seriesfacturaelectronica["logUpdate"] = "El registro en seriesfacturaelectronica fue actualizado con los siguientes datos:";
-$seriesfacturaelectronica["logDeleted"] = "El registro en seriesfacturaelectronica fue eliminado con los siguientes datos:";
-$seriesfacturaelectronica["msg_delete"] = "El Registro en seriesfacturaelectronica fue eliminado correctamente:";
-$seriesfacturaelectronica["add"] = "Agregar Seriesfacturaelectronica";
-$seriesfacturaelectronica["edit"] = "Editar seriesfacturaelectronica";
+$seriesfacturaelectronica["logDeleted"] = "El registro en Series Factura Electronica fue eliminado con los siguientes datos:";
+$seriesfacturaelectronica["msg_delete"] = "El Registro en Series Factura Electronica fue eliminado correctamente:";
+$seriesfacturaelectronica["add"] = "Agregar Series Factura Electronica";
+$seriesfacturaelectronica["edit"] = "Editar Serie factura Electronica";
 $seriesfacturaelectronica["createEdit"] = "Crear / Editar";
 $seriesfacturaelectronica["title"] = "Admon. seriesfacturaelectronica";
 $seriesfacturaelectronica["subtitle"] = "Lista seriesfacturaelectronica";

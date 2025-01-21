@@ -72,7 +72,7 @@ class InstallCommandCFDIElectronicSeries extends BaseCommand
             $this->call('migrate');
             // then seed data
             $seeder = Database::seeder();
-            $seeder->call('julio101290\boilerplatecfdielectronicseries\Database\Seeds\BoilerplateCFDIElectronicSeries');
+            $seeder->call('julio101290\boilerplateCFDIElectronicSeries\Database\Seeds\BoilerplateCFDIElectronicSeries');
         } catch (\Exception $e) {
             $this->showError($e);
         }
