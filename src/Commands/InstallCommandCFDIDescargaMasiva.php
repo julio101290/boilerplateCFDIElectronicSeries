@@ -1,6 +1,6 @@
 <?php
 
-namespace julio101290\boilerplateCFDIDescargaMasiva\Commands;
+namespace julio101290\boilerplatecfdielectronicseries\Commands;
 
 use CodeIgniter\CLI\BaseCommand;
 use Config\Database;
@@ -10,7 +10,7 @@ use CodeIgniter\CLI\CLI;
 /**
  * Class InstallCommand.
  */
-class InstallCommandCFDIDescargaMasiva extends BaseCommand
+class InstallCommandCFDIElectronicSeries extends BaseCommand
 {
     /**
      * The group the command is lumped under
@@ -18,28 +18,28 @@ class InstallCommandCFDIDescargaMasiva extends BaseCommand
      *
      * @var string
      */
-    protected $group = 'boilerplatecfdidescargamasiva';
+    protected $group = 'boilerplatecfdielectronicseries';
 
     /**
      * The command's name.
      *
      * @var string
      */
-    protected $name = 'boilerplatecfdidescargamasiva:installcfdidescargamasiva';
+    protected $name = 'boilerplatecfdielectronicseries:installcfdielectronicseries';
 
     /**
      * The command's short description.
      *
      * @var string
      */
-    protected $description = 'Db install for basic boilerplate CFDI mass download data.';
+    protected $description = 'Db install for basic boilerplate CFDI electronic series data.';
 
     /**
      * The command's usage.
      *
      * @var string
      */
-    protected $usage = 'boilerplatecfdidescargamasiva:installcfdidescargamasiva';
+    protected $usage = 'boilerplatecfdielectronicseries:installcfdielectronicseries';
 
     /**
      * The commamd's argument.
@@ -72,7 +72,7 @@ class InstallCommandCFDIDescargaMasiva extends BaseCommand
             $this->call('migrate');
             // then seed data
             $seeder = Database::seeder();
-            $seeder->call('julio101290\boilerplateCFDIDescargaMasiva\Database\Seeds\BoilerplateCFDIDescargaMasiva');
+            $seeder->call('julio101290\boilerplatecfdielectronicseries\Database\Seeds\BoilerplateCFDIElectronicSeries');
         } catch (\Exception $e) {
             $this->showError($e);
         }

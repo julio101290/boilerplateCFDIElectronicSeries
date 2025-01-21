@@ -1,6 +1,6 @@
 <?php
 
-namespace julio101290\boilerplateCFDIDescargaMasiva\Database\Seeds;
+namespace julio101290\boilerplateCFDIElectronicSeries\Database\Seeds;
 
 use CodeIgniter\Config\Services;
 use CodeIgniter\Database\Seeder;
@@ -10,7 +10,7 @@ use Myth\Auth\Models\UserModel;
 /**
  * Class BoilerplateSeeder.
  */
-class BoilerplateCFDIDescargaMasiva extends Seeder {
+class BoilerplateCFDIElectronicSeries extends Seeder {
 
     /**
      * @var Authorize
@@ -37,10 +37,10 @@ class BoilerplateCFDIDescargaMasiva extends Seeder {
 
 
         // Permission
-        $this->authorize->createPermission('peticionesdescargamasiva-permission', 'CFDI Mass Download Permission ');
+        $this->authorize->createPermission('seriesfacturaelectronica-permission', 'CFDI Electronic Series ');
 
         // Assign Permission to user
-        $this->authorize->addPermissionToUser('peticionesdescargamasiva-permission', 1);
+        $this->authorize->addPermissionToUser('seriesfacturaelectronica-permission', 1);
 
     }
 

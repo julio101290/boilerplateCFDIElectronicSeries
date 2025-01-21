@@ -1,7 +1,7 @@
-[![Latest Stable Version](https://poser.okvpn.org/julio101290/boilerplatequotes/v/stable)](https://packagist.org/packages/julio101290/boilerplatequotes) [![Total Downloads](https://poser.okvpn.org/julio101290/boilerplatequotes/downloads)](https://packagist.org/packages/julio101290/boilerplatequotes) [![Latest Unstable Version](https://poser.okvpn.org/julio101290/boilerplatequotes/v/unstable)](https://packagist.org/packages/julio101290/boilerplatequotes) [![License](https://poser.okvpn.org/julio101290/boilerplatequotes/license)](https://packagist.org/packages/julio101290/boilerplatequotes)
+[![Latest Stable Version](https://poser.okvpn.org/julio101290/boilerplatecfdielectronicseries/v/stable)](https://packagist.org/packages/julio101290/boilerplatecfdielectronicseries) [![Total Downloads](https://poser.okvpn.org/julio101290/boilerplatecfdielectronicseries/downloads)](https://packagist.org/packages/julio101290/boilerplatecfdielectronicseries) [![Latest Unstable Version](https://poser.okvpn.org/julio101290/boilerplatecfdielectronicseries/v/unstable)](https://packagist.org/packages/julio101290/boilerplatecfdielectronicseries) [![License](https://poser.okvpn.org/julio101290/boilerplatecfdielectronicseries/license)](https://packagist.org/packages/julio101290/boilerplatecfdielectronicseries)
 
-## CodeIgniter 4 Boilerplate CFDI
-library for the administration of CFDI electronic invoices, printing, uploading, downloading, etc.
+## CodeIgniter 4 Boilerplate CFDI Electronic Series
+Library for the administration of CRUD CFDI electronic series for invoices, credit notes, payments etc.
 
 ## Requirements
 * PhpCfdi\SatCatalogos
@@ -28,6 +28,8 @@ library for the administration of CFDI electronic invoices, printing, uploading,
 	composer require julio101290/boilerplatetypesmovement
 
 	composer require julio101290/boilerplatequotes
+
+	composer require julio101290/boilerplatecfdielectronicseries
 
 
 ### Run command for migration and seeder
