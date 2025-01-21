@@ -1,6 +1,6 @@
 {
     "name": "julio101290/boilerplatecfdielectronicseries",
-    "description": "library for the administration of CRUD CFDI electronic seires for invoices, credit notes, payments etc, tc.",
+    "description": "library for the administration of CRUD CFDI electronic series for invoices, credit notes, payments etc.",
     "keywords": [
         "codeigniter4",
         "backup",
