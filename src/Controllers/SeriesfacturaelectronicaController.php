@@ -1,15 +1,15 @@
 <?php
 
-namespace App\Controllers;
+namespace julio101290\boilerplateCFDIElectronicSeries\Controllers;
 
 use App\Controllers\BaseController;
-use \App\Models\{
+use julio101290\boilerplateCFDIElectronicSeries\Models\{
     SeriesfacturaelectronicaModel
 };
-use App\Models\LogModel;
+use julio101290\boilerplatelog\Models\LogModel;
 use CodeIgniter\API\ResponseTrait;
-use App\Models\EmpresasModel;
-use App\Models\BranchofficesModel;
+use julio101290\boilerplatecompanies\Models\EmpresasModel;
+use julio101290\boilerplatebranchoffice\Models\BranchofficesModel;
 
 class SeriesfacturaelectronicaController extends BaseController {
 
@@ -56,7 +56,7 @@ class SeriesfacturaelectronicaController extends BaseController {
         }
         $titulos["title"] = lang('seriesfacturaelectronica.title');
         $titulos["subtitle"] = lang('seriesfacturaelectronica.subtitle');
-        return view('seriesfacturaelectronica', $titulos);
+        return view('julio101290\boilerplateCFDIElectronicSeries\Views\seriesfacturaelectronica', $titulos);
     }
 
     /**

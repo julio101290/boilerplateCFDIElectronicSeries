@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace julio101290\boilerplateCFDIElectronicSeries\Models;
 
 use CodeIgniter\Model;
 

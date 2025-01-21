@@ -8,7 +8,7 @@
 <!-- Section content -->
 <?= $this->section('content') ?>
 
-<?= $this->include('modulesSeriesfacturaelectronica/modalCaptureSeriesfacturaelectronica') ?>
+<?= $this->include('julio101290\boilerplateCFDIDescargaMasiva\Views\modulesSeriesfacturaelectronica/modalCaptureSeriesfacturaelectronica') ?>
 
 <!-- SELECT2 EXAMPLE -->
 <div class="card card-default">
@@ -36,7 +36,7 @@
                                 <th>#</th>
                                 <th><?= lang('seriesfacturaelectronica.fields.empresa') ?></th>
                                 <th><?= lang('seriesfacturaelectronica.fields.sucursal') ?></th>
-                                <th>Tipo Serie</th>
+                                <th><?= lang('seriesfacturaelectronica.fields.tipoSerie') ?></th>
                                 <th><?= lang('seriesfacturaelectronica.fields.desdeFecha') ?></th>
                                 <th><?= lang('seriesfacturaelectronica.fields.hastaFecha') ?></th>
                                 <th><?= lang('seriesfacturaelectronica.fields.desdeFolio') ?></th>
