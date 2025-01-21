@@ -4,12 +4,8 @@
 Library for the administration of CRUD CFDI electronic series for invoices, credit notes, payments etc.
 
 ## Requirements
-* PhpCfdi\SatCatalogos
 * julio101290/boilerplatelog 
 * hermawan/codeigniter4-datatables
-* phpcfdi/cfditopdf
-* phpcfdi/cfdi-to-json"
-* phpcfdi/xml-cancelacion
 
 ## Installation
 
