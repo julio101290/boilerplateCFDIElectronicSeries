@@ -15,8 +15,10 @@ $routes->group('admin', function ($routes) {
             , 'SeriesfacturaelectronicaController::save'
             , ['namespace' => 'julio101290\boilerplateCFDIElectronicSeries\Controllers']
     );
+    
     $routes->post('seriesfacturaelectronica/getSeriesfacturaelectronica'
             , 'SeriesfacturaelectronicaController::getSeriesfacturaelectronica'
             , ['namespace' => 'julio101290\boilerplateCFDIElectronicSeries\Controllers']
     );
+    
 });
