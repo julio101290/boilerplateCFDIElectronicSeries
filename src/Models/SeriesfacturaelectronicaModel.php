@@ -35,31 +35,28 @@ class SeriesfacturaelectronicaModel extends Model {
     protected $skipValidation = false;
 
     public function mdlGetSeriesfacturaelectronica($idEmpresas) {
-
-        $result = $this->db->table('seriesfacturaelectronica a, empresas b, branchoffices c')
-                ->select('a.id
-                            ,a.idEmpresa
-                            ,a.sucursal
-                            ,a.tipoSerie
-                            ,a.serie
-                            ,a.desdeFecha
-                            ,a.hastaFecha
-                            ,a.desdeFolio
-                            ,a.hastaFolio
-                            ,a.ambienteTimbrado
-                            ,a.tokenPruebas
-                            ,a.tokenProduccion
-                            ,a.created_at
-                            ,a.updated_at
-                            ,a.deleted_at 
-                            ,b.nombre as nombreEmpresa
-                            ,c.name as nombreSucursal
-                            ')
-                ->where('a.idEmpresa', 'b.id', FALSE)
-                ->where('a.sucursal', 'c.id', FALSE)
+        $result = $this->db->table('seriesfacturaelectronica as a')
+                ->select('a.id as id
+                ,a.idEmpresa as idEmpresa
+                ,a.sucursal as sucursal
+                ,a.tipoSerie as tipoSerie
+                ,a.serie as serie
+                ,a.desdeFecha as desdeFecha
+                ,a.hastaFecha as hastaFecha
+                ,a.desdeFolio as desdeFolio
+                ,a.hastaFolio as hastaFolio
+                ,a.ambienteTimbrado as ambienteTimbrado
+                ,a.tokenPruebas as tokenPruebas
+                ,a.tokenProduccion as tokenProduccion
+                ,a.created_at as created_at
+                ,a.updated_at as updated_at
+                ,a.deleted_at as deleted_at
+                ,b.nombre as nombreEmpresa
+                ,c.name as nombreSucursal')
+                ->join('empresas as b', 'a.idEmpresa = b.id')
+                ->join('branchoffices as c', 'a.sucursal = c.id')
                 ->whereIn('a.idEmpresa', $idEmpresas);
 
         return $result;
     }
-
 }
